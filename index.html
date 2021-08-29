@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+header{
+    text-align: center;
+    position: sticky;
+}
+#game-name{
+    color: coral;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:40px;
+}
+.field:hover .bat{
+
+    transform: rotate(-60deg);
+    transition: 1s ease-in;
+    
+    
+}
+.field{
+    border: 1px solid white;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color:red;
+    border-radius: 25px;
+    position: relative;
+    left: 460px;
+    bottom:110px;
+    transition: 1s ease-out 1s;
+}
+.field:hover .ball{
+
+    transform: translate(1450px,-700px);
+
+
+}
+button{
+    padding: 10px;margin: 10px;
+    color: rgb(0, 255, 13);
+    font-size: 25px;
+    border-radius:10px;
+    background-color: gray;
+}
+button:hover{
+    background-color:black;
+    color: gold;
+}
+.button{
+    text-align: center;
+}
+
+
+</style>
+
+</head>
+<header>
+    <h1> Do you want to play <span id="game-name"> CRICKET </span> ? </h1>
+    <p>Just Click On This Button !!! </p>
+    
+</header>
+<body>
+   
+    <div class="field">
+        <div class="button">
+            <button>Play</button></div>
+   
+    <img class="bat"  src="bat.png" alt="">
+    <div class="ball"></div>
+
+
+</div>
+</body>
+</html>
